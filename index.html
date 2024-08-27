@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Management</title>
+    <style>
+        body{
+           font-family: Arial, Helvetica, sans-serif;
+           margin: 20px;
+        }
+        .error{
+            color: red;
+        }
+        .button{
+            border-radius: 20px;
+            color: chocolate;
+            margin-left: 100px;         
+  margin-top: 30px;
+            background-color: black;
+            cursor:pointer;
+            padding: 5px;
+            width: 3cm;
+            height: 1cm;
+        }
+        .form{
+            list-style: none;
+            margin-left:500px ;
+            padding: 70px;
+            font-weight: bold;
+            border-color: black;
+
+        }
+        .button :hover{
+            background-color: aqua;
+            transition: 3s;
+            
+        }
+    </style>
+</head>
+<body>
+    <center><strong>Student Record Management</strong></center>
+    <div class="form">
+    <ul><form id="studentFrom"></form>
+        <li><label for="studentId">student Id:</label>
+            <input type="text"  id="studentId" required></li>
+            <br>
+         <li><label for="studentName">student Name:</label>
+            <input type="text"  id="studentName" required></li> 
+            <br>
+          <li><label for="studentAge">student Age:</label>
+            <input type="number"  id="studentAge" required></li>
+        <br>
+
+        <button type="submit" class="button">Add student</button>
+    </form></ul></div>
+    <center><h2>student Record</h2></center>
+    <div id="error" class="error"></div>
+    <ul id="studentList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
